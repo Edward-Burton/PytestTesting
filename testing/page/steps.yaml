@@ -1,0 +1,12 @@
+-by:id
+  locator:name #定位的具体内容
+  action:click #对元素具体的操作
+
+-by:xpath
+  locator:search
+  action:click
+
+-by:xpath
+  locator:search
+  action:send
+  value:"{value}" #此处表示可以从python的域里取值
