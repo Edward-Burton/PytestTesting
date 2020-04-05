@@ -11,7 +11,10 @@ class BasePage():
         self._driver=""
         #防止每次调用都初始化新的driver，在调用第一个类时就进行创建
         if driver is None:
-            self._driver = webdriver.Chrome()
+            options = webdriver.ChromeOptions()
+            options.debugger_address="localhost:8083"
+            self._driver = webdriver.Chrome(options=options)
+            self._driver.implicitly_wait(5)
         else:
             self._driver = driver
 

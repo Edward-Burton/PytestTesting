@@ -11,4 +11,3 @@ class Login(BasePage):
     def goto_register(self):
         self.find(By.CSS_SELECTOR,'.login_registerBar_link').click()
         return Register(self._driver)
-

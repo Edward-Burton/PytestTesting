@@ -1,6 +1,6 @@
 from appium.webdriver import webdriver
 
-from testing.page.base_page import BasePage
+from testing import BasePage
 
 
 class  App(BasePage):
